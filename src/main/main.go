@@ -19,7 +19,7 @@ func main() {
 
 	var onLocal bool = true
 	if onLocal {
-		os.Setenv("FIRESTORE_EMULATOR_HOST", "localhost:8080")
+		os.Setenv("FIRESTORE_EMULATOR_HOST", "localhost:"+constants.Emulator_Port)
 	}
 
 	/* //Init Firebase app with Service account Config File on Non-Google Platform
